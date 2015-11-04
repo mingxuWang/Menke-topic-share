@@ -1,0 +1,200 @@
+/*reset*/
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+}
+
+/*header*/
+header{
+	position: relative;
+	width: 100%;
+	height:10rem;
+	display: block;
+	background-color: #eaeeed;
+	border-bottom: 1px solid #d2d2d4;
+}
+.clearfix::after{
+	content: ".";
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+#download{
+	position: absolute;
+	width: 10rem;
+	height: 4rem;
+	top:3rem;
+	right: 1rem;
+	font-size: 2rem;
+	line-height: 4rem;
+	text-align: center;
+	color: white;
+	background-color: #4ca9e4;
+	border-radius: 5px;
+}
+header>#logo{
+	position: absolute;
+	width: 8rem;
+	height: 8rem;
+	top: 1rem;
+	left: 1rem;
+}
+header #stars{
+	position: absolute;
+	top: 6.5rem;
+	left: 11rem;
+}
+header .des{
+	position: absolute;
+	left: 11rem;
+	top:2rem;
+	font-size: 2.5rem;
+}
+#downnums{
+	position: absolute;
+	left: 20rem;
+	top:6.5rem;
+	font-size: 1.5rem;
+	color: #999b9a;
+}
+header a{
+	color: white;
+	text-decoration: none;
+}
+
+/*content*/
+#content{
+	width: 100%;
+	position: relative;
+	border-bottom: 1px solid #d2d2d4;
+}
+#details{
+	margin: 2rem 1rem 6rem;
+}
+#owner-url{
+	margin-top: 1rem;
+	width: 6rem;
+}
+#det-main{
+	margin-left: 7rem;
+	margin-top: -4rem;
+}
+#owner-name{
+	font-size: 2.5rem;
+}
+#det-main img{
+	margin-left: 2rem;
+}
+#owner-company{
+	background-image: url('icon_location.png');
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-indent: 2rem;
+	color: #999999;
+	font-size: 1.8rem;
+	margin-left: 1rem;
+}
+#owner-job{
+	color: #999999;
+	margin-top: 1rem;
+	font-size: 1.7rem;
+}
+#text-content{
+	margin-top: 1rem;
+	font-size: 1.7rem;
+	line-height: 2.5rem;
+}
+#imgArr img{
+	margin: 1rem 0.5rem 0 0;
+	padding: 0;
+	width: 15rem;
+}
+#owner-num{
+	position: absolute;
+	bottom: 2rem;
+	right: 2rem;
+	font-size: 1.5rem;
+	color: #999b9a;
+}
+#tags{
+	margin: 1rem 0;
+	font-size: 1.5rem;
+	color: #999b9a; 
+}
+#tags span{
+	margin-right: 1rem;
+}
+#num_like,#num_comment{
+	margin: 0 0.5rem;
+}
+
+
+/*comments*/
+#comments{
+	margin-bottom: 5rem;
+}
+#com-title{
+	border-bottom: 1px solid #d2d2d4;
+}
+#com-title i{
+	padding: 0 0.5rem;
+	margin-right: 1rem;
+	background-color: #4ca9e4;
+}
+#com-title div{
+	margin: 1.5rem 0;
+	font-size: 2rem;
+}
+.details{
+	margin: 3rem 0 3rem 2rem;
+	
+}
+.item{
+	border-bottom: 1px solid #d2d2d4;
+	margin-bottom: 2rem;
+	padding-bottom: 1rem;
+}
+.com-url{
+	width: 5rem;
+}
+.owner-name{
+	font-size: 2.5rem;
+	color: #4ca9e4;
+}
+.owner-location{
+	margin: 1rem 0;
+	position: relative;
+}
+
+.com-main{
+	margin-left: 7rem;
+	margin-top: -4rem;
+}
+.owner-company{
+	background-image: url('icon_location_qian.png');
+	background-repeat: no-repeat;
+	text-indent: 2rem;
+	display: inline-block;
+	color: #999999;
+	font-size: 1.8rem;
+}
+.text-content{
+	margin-top: 1rem;
+	font-size: 1.7rem;
+	line-height: 2.5rem;
+	margin-right: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+

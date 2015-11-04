@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>下载门客App</title>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"> 
+	<link rel="stylesheet" type="text/css" href="./src/main-download.css">
+</head>
+<body id='body'>
+	<div id="top" style="display:none">
+		<div class="main-title">
+			扫码下载门客APP，进入门客学院进行学习
+		</div>
+		<h3 class="description">
+			专注于提供创新产业链服务的创业O2O社交平台、衔接青年创业者和创业导师的交流学习平台
+		</h3>			
+	</div>
+	<div id='pc' style="display:none">
+		<div class="contain">
+			<img class="erweima" src="./src/erweima.png">
+		</div>
+	</div>
+	<!-- 移动端打开显示内容 -->
+	<div class="mobile">
+		<!-- 微信打开显示 -->
+		<div id="micro" style="display:none">
+			<img src="./src/microMessenger.png" style="width:100%;">
+		</div>
+		<!-- ios safari打开显示 -->
+		<div id='ios' style="display:none">
+			<div class="title">
+				谢谢下载<br>
+				如果没有发生跳转啊，请点击下方按钮<br>
+				<a href="https://appsto.re/cn/x4rK9.i">前往Appstore下载门客app</a>
+			</div>
+		</div>
+		<!-- android 原生浏览器打开显示 -->
+		<div id='android' style="display:none">
+			<div class="title">
+				谢谢下载<br>
+				如果没有发生跳转啊，请点击下方按钮<br>
+				<a href="http://zhushou.360.cn/detail/index/soft_id/3095126?recrefer=SE_D_%E9%97%A8%E5%AE%A2">前往应用市场下载门客app</a>
+			</div>
+		</div>
+	</div>
+	
+	<div id="footer">
+		Copyright © 2015.正蒙同创 JoinMind All rights reserved.
+	</div>
+
+
+
+
+	<script type="text/javascript">
+		window.onload=function(){
+			// 读取浏览器平台
+			var platform=window.navigator.platform;
+			var user=window.navigator.userAgent;
+			// 如果是pc平台
+			if(isContains(platform,'Mac')|isContains(platform,'Win')){
+				var pc=document.getElementById('pc');
+				var top = document.getElementById('top');
+				top.style.cssText='display:block';
+				pc.style.cssText='display:block';
+			}
+			// 如果是移动端
+			// iphone
+			else if(isContains(platform,'iPhone')){
+				if(isContains(user,'Micro')){
+					alert('请使用Safari浏览器访问本网页，谢谢！');
+					var micro=document.getElementById('micro');
+					var top = document.getElementById('top');
+					var body = document.getElementById("body");
+					var footer = document.getElementById('footer');
+					top.style.cssText='display:none';
+					micro.style.cssText='display:block';
+					body.style.cssText="background-color:white;";
+					footer.style.cssText="color:black";
+				}
+				else{
+					var ios = document.getElementById('ios');
+					var top = document.getElementById('top');
+					top.style.cssText='display:none';
+					ios.style.cssText='display:block';
+					window.location='https://appsto.re/cn/x4rK9.i';
+				}
+			}
+			// android
+			else if(isContains(platform,'Linux')){
+				if(isContains(user,'Micro')){
+					alert('请使用原生浏览器访问本网页，谢谢！');
+					var micro=document.getElementById('micro');
+					var top = document.getElementById('top');
+					var body = document.getElementById("body");
+					var footer = document.getElementById('footer');
+					top.style.cssText='display:none';
+					micro.style.cssText='display:block';
+					body.style.cssText="background-color:white;";
+					footer.style.cssText="color:black";
+				}
+				else{
+					var android = document.getElementById("android");
+					var top = document.getElementById("top");
+					top.style.cssText='display:none';
+					android.style.cssText='display:block';
+					window.location='http://zhushou.360.cn/detail/index/soft_id/3095126?recrefer=SE_D_%E9%97%A8%E5%AE%A2';
+				}
+			}
+
+
+
+			function isContains(str,substr){
+				return str.indexOf(substr) >=0;
+			}
+
+		}
+
+	
+	</script>
+
+
+
+</body>
+</html>

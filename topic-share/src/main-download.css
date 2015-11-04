@@ -1,0 +1,102 @@
+/*整体布局css*/
+html,body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: "微软雅黑"
+}
+body{
+	background-color: gray;
+}
+#footer{
+	width: 100%;
+	position: absolute;
+	bottom: 30px;
+	text-align: center;
+	color: white;
+}
+.main-title{
+	width: 100%;
+	margin-top: 30px;
+	font-size: 3rem;
+	text-align: center;
+	color: white;
+
+}
+.item{
+	margin-top: 40px;
+	text-align: center;
+}
+.description{
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+	color: white;
+}
+/*pc端内容*/
+#pc{
+	height: auto;
+}
+#pc .contain{
+	position: relative;
+	margin: 0 10%;
+}
+.erweima{
+	background-color: white;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left: 50%;
+	margin-top: 50px;
+	margin-left: -150px;
+}
+/*移动端内容*/
+.mobile .title{
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 2rem;
+	color: white;
+}
+#ios .title{
+	margin-top: 50px;
+}
+#ios .title a{
+	margin-top: 200px;
+	position: fixed;
+	display: block;
+	top: 10%;
+	left: 2%;
+	right: 2%;
+	color: black;
+	height: 100px;
+	line-height: 100px;
+	text-decoration: none;
+	background-color: white;
+
+}
+#micro{
+	height: 100%;
+	background-color: white;
+}
+#micro img{
+	width: 100%;
+}
+#android .title{
+	margin-top: 50px;
+}
+#android .title a{
+	margin-top: 200px;
+	position: fixed;
+	display: block;
+	top: 10%;
+	left: 2%;
+	right: 2%;
+	color: black;
+	height: 100px;
+	line-height: 100px;
+	text-decoration: none;
+	background-color: white;
+	font-size: 20px;
+
+}
